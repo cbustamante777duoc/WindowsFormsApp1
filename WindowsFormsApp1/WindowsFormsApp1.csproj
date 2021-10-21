@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +66,12 @@
     <Compile Include="FrmLocal.Designer.cs">
       <DependentUpon>FrmLocal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTestBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTestBoleta.Designer.cs">
+      <DependentUpon>FrmTestBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +80,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +102,9 @@
     <EmbeddedResource Include="FrmLocal.resx">
       <DependentUpon>FrmLocal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTestBoleta.resx">
+      <DependentUpon>FrmTestBoleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaProveedor.resx">
       <DependentUpon>VentanaProveedor.cs</DependentUpon>
     </EmbeddedResource>
