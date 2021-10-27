@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FrmTestBoleta
+    partial class FrmListarProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,34 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvBoleta = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).BeginInit();
+            this.dgvProducto = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvBoleta
+            // dgvProducto
             // 
-            this.dgvBoleta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBoleta.Location = new System.Drawing.Point(178, 33);
-            this.dgvBoleta.Name = "dgvBoleta";
-            this.dgvBoleta.Size = new System.Drawing.Size(444, 287);
-            this.dgvBoleta.TabIndex = 0;
+            this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducto.Location = new System.Drawing.Point(147, 115);
+            this.dgvProducto.Name = "dgvProducto";
+            this.dgvProducto.Size = new System.Drawing.Size(467, 261);
+            this.dgvProducto.TabIndex = 0;
             // 
-            // FrmTestBoleta
+            // FrmListarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvBoleta);
-            this.Name = "FrmTestBoleta";
-            this.Text = "FrmTestBoleta";
-            this.Load += new System.EventHandler(this.FrmTestBoleta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).EndInit();
+            this.ClientSize = new System.Drawing.Size(822, 532);
+            this.Controls.Add(this.dgvProducto);
+            this.Name = "FrmListarProducto";
+            this.Text = "FrmListarProducto";
+            this.Load += new System.EventHandler(this.FrmListarProducto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvBoleta;
+        private System.Windows.Forms.DataGridView dgvProducto;
     }
 }

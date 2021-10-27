@@ -21,14 +21,16 @@ namespace WindowsFormsApp1
 
         private void FrmTestBoleta_Load(object sender, EventArgs e)
         {
-            OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
-            OracleCommand cmd = new OracleCommand("upslitarBoleta", cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("cursorMemoria",OracleType.Cursor).Direction = ParameterDirection.Output;
-            OracleDataAdapter adapter = new OracleDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dgvBoleta.DataSource = table;
+            SQL.ListarProcedureSql("upslitarBoleta", "cursorMemoria",dgvBoleta);
+
+            //OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
+            //OracleCommand cmd = new OracleCommand("upslitarBoleta", cn);
+            //cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.Parameters.Add("cursorMemoria",OracleType.Cursor).Direction = ParameterDirection.Output;
+            //OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+            //DataTable table = new DataTable();
+            //adapter.Fill(table);
+            //dgvBoleta.DataSource = table;
 
           
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FrmTestBoleta
+    partial class FrmListarUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,34 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvBoleta = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).BeginInit();
+            this.dgvUsuario = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvBoleta
+            // dgvUsuario
             // 
-            this.dgvBoleta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBoleta.Location = new System.Drawing.Point(178, 33);
-            this.dgvBoleta.Name = "dgvBoleta";
-            this.dgvBoleta.Size = new System.Drawing.Size(444, 287);
-            this.dgvBoleta.TabIndex = 0;
+            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuario.Location = new System.Drawing.Point(122, 46);
+            this.dgvUsuario.Name = "dgvUsuario";
+            this.dgvUsuario.Size = new System.Drawing.Size(488, 298);
+            this.dgvUsuario.TabIndex = 0;
             // 
-            // FrmTestBoleta
+            // FrmListarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvBoleta);
-            this.Name = "FrmTestBoleta";
-            this.Text = "FrmTestBoleta";
-            this.Load += new System.EventHandler(this.FrmTestBoleta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).EndInit();
+            this.Controls.Add(this.dgvUsuario);
+            this.Name = "FrmListarUsuarios";
+            this.Text = "FrmListarUsuarios";
+            this.Load += new System.EventHandler(this.FrmListarUsuarios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvBoleta;
+        private System.Windows.Forms.DataGridView dgvUsuario;
     }
 }

@@ -60,6 +60,24 @@
     <Compile Include="FrmInsumo.Designer.cs">
       <DependentUpon>FrmInsumo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListarInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarInsumos.Designer.cs">
+      <DependentUpon>FrmListarInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarProducto.Designer.cs">
+      <DependentUpon>FrmListarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarUsuarios.Designer.cs">
+      <DependentUpon>FrmListarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLocal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInsumo.resx">
       <DependentUpon>FrmInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarInsumos.resx">
+      <DependentUpon>FrmListarInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarProducto.resx">
+      <DependentUpon>FrmListarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarUsuarios.resx">
+      <DependentUpon>FrmListarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLocal.resx">
       <DependentUpon>FrmLocal.cs</DependentUpon>

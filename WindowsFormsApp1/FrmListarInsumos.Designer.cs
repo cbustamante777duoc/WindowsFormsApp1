@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FrmTestBoleta
+    partial class FrmListarInsumos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,34 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvBoleta = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).BeginInit();
+            this.dgvInsumo = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInsumo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvBoleta
+            // dgvInsumo
             // 
-            this.dgvBoleta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBoleta.Location = new System.Drawing.Point(178, 33);
-            this.dgvBoleta.Name = "dgvBoleta";
-            this.dgvBoleta.Size = new System.Drawing.Size(444, 287);
-            this.dgvBoleta.TabIndex = 0;
+            this.dgvInsumo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInsumo.Location = new System.Drawing.Point(129, 67);
+            this.dgvInsumo.Name = "dgvInsumo";
+            this.dgvInsumo.Size = new System.Drawing.Size(437, 278);
+            this.dgvInsumo.TabIndex = 0;
             // 
-            // FrmTestBoleta
+            // FrmListarInsumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvBoleta);
-            this.Name = "FrmTestBoleta";
-            this.Text = "FrmTestBoleta";
-            this.Load += new System.EventHandler(this.FrmTestBoleta_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).EndInit();
+            this.Controls.Add(this.dgvInsumo);
+            this.Name = "FrmListarInsumos";
+            this.Text = "FrmListarInsumos";
+            this.Load += new System.EventHandler(this.FrmListarInsumos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInsumo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvBoleta;
+        private System.Windows.Forms.DataGridView dgvInsumo;
     }
 }
