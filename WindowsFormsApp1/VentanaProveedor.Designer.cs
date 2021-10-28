@@ -237,6 +237,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.dgvProveedor);
             this.Name = "VentanaProveedor";
             this.Text = "VentaProveedor";
+            this.Load += new System.EventHandler(this.VentanaProveedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

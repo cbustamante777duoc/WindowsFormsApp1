@@ -197,6 +197,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.dgvUsuario);
             this.Name = "FrmUsuario";
             this.Text = "FrmUsuario";
+            this.Load += new System.EventHandler(this.FrmUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

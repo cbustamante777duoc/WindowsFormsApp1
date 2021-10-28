@@ -36,9 +36,9 @@ namespace WindowsFormsApp1
             // dgvInsumo
             // 
             this.dgvInsumo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInsumo.Location = new System.Drawing.Point(129, 67);
+            this.dgvInsumo.Location = new System.Drawing.Point(56, 63);
             this.dgvInsumo.Name = "dgvInsumo";
-            this.dgvInsumo.Size = new System.Drawing.Size(437, 278);
+            this.dgvInsumo.Size = new System.Drawing.Size(674, 290);
             this.dgvInsumo.TabIndex = 0;
             // 
             // FrmListarInsumos

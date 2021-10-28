@@ -102,6 +102,9 @@ namespace WindowsFormsApp1
 
         }
 
-      
+        private void FrmUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

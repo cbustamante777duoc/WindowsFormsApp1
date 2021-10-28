@@ -103,5 +103,10 @@ namespace WindowsFormsApp1
 
             ora.Close();
         }
+
+        private void VentanaProveedor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
