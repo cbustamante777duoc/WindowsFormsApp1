@@ -35,10 +35,12 @@ namespace WindowsFormsApp1
             // 
             // dgvInsumo
             // 
+            this.dgvInsumo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInsumo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvInsumo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInsumo.Location = new System.Drawing.Point(56, 63);
             this.dgvInsumo.Name = "dgvInsumo";
-            this.dgvInsumo.Size = new System.Drawing.Size(674, 290);
+            this.dgvInsumo.Size = new System.Drawing.Size(600, 290);
             this.dgvInsumo.TabIndex = 0;
             // 
             // FrmListarInsumos

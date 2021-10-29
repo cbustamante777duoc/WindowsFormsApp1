@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FrmListarUsuarios
+    partial class FrmListarMerma
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,36 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvUsuario = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
+            this.dgvListarMerma = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListarMerma)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvUsuario
+            // dgvListarMerma
             // 
-            this.dgvUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUsuario.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Location = new System.Drawing.Point(28, 56);
-            this.dgvUsuario.Name = "dgvUsuario";
-            this.dgvUsuario.Size = new System.Drawing.Size(702, 187);
-            this.dgvUsuario.TabIndex = 0;
+            this.dgvListarMerma.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListarMerma.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvListarMerma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListarMerma.Location = new System.Drawing.Point(67, 54);
+            this.dgvListarMerma.Name = "dgvListarMerma";
+            this.dgvListarMerma.Size = new System.Drawing.Size(629, 264);
+            this.dgvListarMerma.TabIndex = 0;
             // 
-            // FrmListarUsuarios
+            // FrmListarMerma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvUsuario);
-            this.Name = "FrmListarUsuarios";
-            this.Text = "FrmListarUsuarios";
-            this.Load += new System.EventHandler(this.FrmListarUsuarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
+            this.Controls.Add(this.dgvListarMerma);
+            this.Name = "FrmListarMerma";
+            this.Text = "FrmListarMerma";
+            this.Load += new System.EventHandler(this.FrmListarMerma_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListarMerma)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvUsuario;
+        private System.Windows.Forms.DataGridView dgvListarMerma;
     }
 }

@@ -66,11 +66,23 @@
     <Compile Include="FrmListarInsumos.Designer.cs">
       <DependentUpon>FrmListarInsumos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListarMerma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarMerma.Designer.cs">
+      <DependentUpon>FrmListarMerma.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmListarProducto.Designer.cs">
       <DependentUpon>FrmListarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarProveedor.Designer.cs">
+      <DependentUpon>FrmListarProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListarUsuarios.cs">
       <SubType>Form</SubType>
@@ -120,8 +132,14 @@
     <EmbeddedResource Include="FrmListarInsumos.resx">
       <DependentUpon>FrmListarInsumos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarMerma.resx">
+      <DependentUpon>FrmListarMerma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListarProducto.resx">
       <DependentUpon>FrmListarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarProveedor.resx">
+      <DependentUpon>FrmListarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListarUsuarios.resx">
       <DependentUpon>FrmListarUsuarios.cs</DependentUpon>
