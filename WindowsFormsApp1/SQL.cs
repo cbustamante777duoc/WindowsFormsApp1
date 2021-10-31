@@ -39,6 +39,19 @@ namespace WindowsFormsApp1
 
         }
 
+        public static void FiltrarProcedureSql(string nombreProcedure, string nombreCursor, string parametro,
+            TextBox textbox,DataGridView grilla) 
+        {
+            OracleCommand cmd = new OracleCommand("buscarBoletaTest", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(nombreProcedure, OracleType.Cursor).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(parametro, OracleType.VarChar).Value = textbox.Text;
+            OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            grilla.DataSource = table;
+        }
+
 
     }
 }

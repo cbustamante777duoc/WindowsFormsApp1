@@ -34,5 +34,20 @@ namespace WindowsFormsApp1
 
           
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            //SQL.FiltrarProcedureSql("buscarBoletaTest", "cursorMemoria", "id_bole", txtidBoleta, dgvBoleta);
+            OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
+            OracleCommand cmd = new OracleCommand("buscarBoletaTest", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("cursorMemoria", OracleType.Cursor).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("id_bole", OracleType.VarChar).Value = txtidBoleta.Text;
+            OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvBoleta.DataSource = table;
+
+        }
     }
 }
