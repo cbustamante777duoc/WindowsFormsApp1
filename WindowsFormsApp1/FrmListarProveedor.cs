@@ -36,5 +36,11 @@ namespace WindowsFormsApp1
             adapter.Fill(table);
             dgvProveedor.DataSource = table;
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtRut.Text = "";
+            SQL.ListarProcedureSql("ListarProveedor", "cursorMemoria", dgvProveedor);
+        }
     }
 }
