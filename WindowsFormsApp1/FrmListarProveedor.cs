@@ -106,12 +106,12 @@ namespace WindowsFormsApp1
                 commando.CommandType = System.Data.CommandType.StoredProcedure;
                 commando.Parameters.Add("id_porveedor", OracleType.VarChar).Value = txtId.Text;
                 commando.ExecuteNonQuery();
-                MessageBox.Show("se elimino correctamente el proveedor con id " + txtId.Text);
+                MessageBox.Show("se elimino correctamente el proveedor con Id " + txtId.Text);
             }
             catch (Exception)
             {
 
-                MessageBox.Show("No se ha podido eliminar el proveedor");
+                MessageBox.Show("No se ha podido eliminar el proveedor ");
             }
 
             ora.Close();
