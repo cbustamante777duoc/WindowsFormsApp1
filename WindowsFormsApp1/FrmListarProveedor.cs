@@ -96,5 +96,25 @@ namespace WindowsFormsApp1
             }
             ora.Close();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ora.Open();
+                OracleCommand commando = new OracleCommand("eliminarProveedor", ora);
+                commando.CommandType = System.Data.CommandType.StoredProcedure;
+                commando.Parameters.Add("id_porveedor", OracleType.VarChar).Value = txtId.Text;
+                commando.ExecuteNonQuery();
+                MessageBox.Show("se elimino correctamente el proveedor con id " + txtId.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No se ha podido eliminar el proveedor");
+            }
+
+            ora.Close();
+        }
     }
 }

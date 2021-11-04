@@ -51,7 +51,6 @@ namespace WindowsFormsApp1
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.btnCargar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,12 +214,13 @@ namespace WindowsFormsApp1
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(754, 109);
+            this.btnEliminar.Location = new System.Drawing.Point(628, 109);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(82, 44);
             this.btnEliminar.TabIndex = 32;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -242,15 +242,6 @@ namespace WindowsFormsApp1
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
-            // btnCargar
-            // 
-            this.btnCargar.Location = new System.Drawing.Point(628, 109);
-            this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(91, 44);
-            this.btnCargar.TabIndex = 29;
-            this.btnCargar.Text = "cargar";
-            this.btnCargar.UseVisualStyleBackColor = true;
-            // 
             // FrmListarProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,7 +250,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnInsertar);
-            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtRut);
             this.Controls.Add(this.txtNombre);
@@ -312,6 +302,5 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Button btnCargar;
     }
 }
