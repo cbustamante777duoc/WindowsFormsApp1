@@ -44,20 +44,23 @@ namespace WindowsFormsApp1
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtIdLocal = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvUsuario
             // 
             this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Location = new System.Drawing.Point(84, 120);
+            this.dgvUsuario.Location = new System.Drawing.Point(60, 259);
             this.dgvUsuario.Name = "dgvUsuario";
-            this.dgvUsuario.Size = new System.Drawing.Size(421, 197);
+            this.dgvUsuario.Size = new System.Drawing.Size(874, 246);
             this.dgvUsuario.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(84, 341);
+            this.btnAgregar.Location = new System.Drawing.Point(617, 87);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(81, 33);
             this.btnAgregar.TabIndex = 1;
@@ -67,17 +70,17 @@ namespace WindowsFormsApp1
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(207, 341);
+            this.btnCargar.Location = new System.Drawing.Point(740, 87);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(75, 33);
             this.btnCargar.TabIndex = 2;
-            this.btnCargar.Text = "Cargar";
+            this.btnCargar.Text = "Limpiar";
             this.btnCargar.UseVisualStyleBackColor = true;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(313, 341);
+            this.btnActualizar.Location = new System.Drawing.Point(619, 27);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(79, 33);
             this.btnActualizar.TabIndex = 3;
@@ -87,7 +90,7 @@ namespace WindowsFormsApp1
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(426, 341);
+            this.btnEliminar.Location = new System.Drawing.Point(732, 27);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(79, 33);
             this.btnEliminar.TabIndex = 4;
@@ -98,7 +101,7 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(543, 129);
+            this.label1.Location = new System.Drawing.Point(92, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 5;
@@ -107,7 +110,7 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(543, 179);
+            this.label2.Location = new System.Drawing.Point(92, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 6;
@@ -116,7 +119,7 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(543, 227);
+            this.label3.Location = new System.Drawing.Point(92, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 7;
@@ -125,7 +128,7 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(546, 264);
+            this.label4.Location = new System.Drawing.Point(345, 8);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 8;
@@ -134,7 +137,7 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(549, 303);
+            this.label5.Location = new System.Drawing.Point(348, 47);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 9;
@@ -142,44 +145,73 @@ namespace WindowsFormsApp1
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(623, 121);
+            this.txtIdUsuario.Location = new System.Drawing.Point(172, 1);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(115, 20);
             this.txtIdUsuario.TabIndex = 10;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(623, 179);
+            this.txtEstado.Location = new System.Drawing.Point(172, 59);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(115, 20);
             this.txtEstado.TabIndex = 11;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(623, 227);
+            this.txtPass.Location = new System.Drawing.Point(172, 107);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(115, 20);
             this.txtPass.TabIndex = 12;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(623, 264);
+            this.txtNombre.Location = new System.Drawing.Point(422, 8);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(115, 20);
             this.txtNombre.TabIndex = 13;
             // 
             // txtIdLocal
             // 
-            this.txtIdLocal.Location = new System.Drawing.Point(623, 303);
+            this.txtIdLocal.Location = new System.Drawing.Point(422, 47);
             this.txtIdLocal.Name = "txtIdLocal";
             this.txtIdLocal.Size = new System.Drawing.Size(115, 20);
             this.txtIdLocal.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(108, 209);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 13);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Buscar por usuario";
+            // 
+            // txtBuscarNombre
+            // 
+            this.txtBuscarNombre.Location = new System.Drawing.Point(256, 201);
+            this.txtBuscarNombre.Name = "txtBuscarNombre";
+            this.txtBuscarNombre.Size = new System.Drawing.Size(281, 20);
+            this.txtBuscarNombre.TabIndex = 16;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(617, 201);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(122, 23);
+            this.btnBuscar.TabIndex = 17;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(962, 561);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBuscarNombre);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtIdLocal);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtPass);
@@ -221,5 +253,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtIdLocal;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtBuscarNombre;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

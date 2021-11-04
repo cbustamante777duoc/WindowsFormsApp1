@@ -90,12 +90,6 @@
     <Compile Include="FrmListarProveedor.Designer.cs">
       <DependentUpon>FrmListarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmListarUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmListarUsuarios.Designer.cs">
-      <DependentUpon>FrmListarUsuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmLocal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,9 +143,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListarProveedor.resx">
       <DependentUpon>FrmListarProveedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmListarUsuarios.resx">
-      <DependentUpon>FrmListarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLocal.resx">
       <DependentUpon>FrmLocal.cs</DependentUpon>

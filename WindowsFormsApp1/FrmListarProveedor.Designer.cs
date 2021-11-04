@@ -214,7 +214,7 @@ namespace WindowsFormsApp1
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(628, 109);
+            this.btnEliminar.Location = new System.Drawing.Point(628, 100);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(82, 44);
             this.btnEliminar.TabIndex = 32;

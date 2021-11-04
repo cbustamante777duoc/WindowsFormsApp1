@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.OracleClient;
 using System.Drawing;
@@ -21,13 +22,20 @@ namespace WindowsFormsApp1
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            ora.Open();
-            OracleCommand commando = new OracleCommand("select * from usuario", ora);
-            OracleDataAdapter adapter = new OracleDataAdapter(commando);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dgvUsuario.DataSource = table;
-            ora.Close();
+            //ora.Open();
+            //OracleCommand commando = new OracleCommand("select * from usuario", ora);
+            //OracleDataAdapter adapter = new OracleDataAdapter(commando);
+            //DataTable table = new DataTable();
+            //adapter.Fill(table);
+            //dgvUsuario.DataSource = table;
+            //ora.Close();
+            SQL.ListarProcedureSql("ListarUsuarios", "cursorMemoria", dgvUsuario);
+            txtEstado.Text = "";
+            txtIdLocal.Text = "";
+            txtIdUsuario.Text = "";
+            txtNombre.Text = "";
+            txtPass.Text = "";
+            txtBuscarNombre.Text = "";
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -104,7 +112,20 @@ namespace WindowsFormsApp1
 
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
+            SQL.ListarProcedureSql("ListarUsuarios", "cursorMemoria", dgvUsuario);
+        }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            OracleConnection cn = new OracleConnection(ConfigurationManager.ConnectionStrings["cnx"].ConnectionString);
+            OracleCommand cmd = new OracleCommand("BuscarUsuarios", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("cursorMemoria", OracleType.Cursor).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("usuarioB", OracleType.VarChar).Value = txtBuscarNombre.Text;
+            OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvUsuario.DataSource = table;
         }
     }
 }
