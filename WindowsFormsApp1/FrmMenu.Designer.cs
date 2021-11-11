@@ -43,6 +43,7 @@ namespace WindowsFormsApp1
             this.localToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insumoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesPdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@ namespace WindowsFormsApp1
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inicioToolStripMenuItem,
             this.mantenedoresToolStripMenuItem,
-            this.listadosToolStripMenuItem});
+            this.listadosToolStripMenuItem,
+            this.reportesPdfToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -159,6 +161,12 @@ namespace WindowsFormsApp1
             this.insumoToolStripMenuItem1.Text = "insumo";
             this.insumoToolStripMenuItem1.Click += new System.EventHandler(this.insumoToolStripMenuItem1_Click);
             // 
+            // reportesPdfToolStripMenuItem
+            // 
+            this.reportesPdfToolStripMenuItem.Name = "reportesPdfToolStripMenuItem";
+            this.reportesPdfToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.reportesPdfToolStripMenuItem.Text = "reportes pdf";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,5 +199,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem localToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem insumoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reportesPdfToolStripMenuItem;
     }
 }
