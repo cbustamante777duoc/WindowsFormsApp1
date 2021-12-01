@@ -40,6 +40,8 @@ namespace WindowsFormsApp1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            validarCampos();
+
             try
             {
                 ora.Open();
@@ -52,6 +54,7 @@ namespace WindowsFormsApp1
                 commando.Parameters.Add("id_local", OracleType.VarChar).Value = txtIdLocal.Text;
                 commando.ExecuteNonQuery();
                 MessageBox.Show("se inserto correctamente el usuario en la base de datos con id =" + txtIdUsuario.Text);
+                
             }
             catch (Exception)
             {
@@ -61,6 +64,43 @@ namespace WindowsFormsApp1
 
             ora.Close();
 
+        }
+
+        private bool validarCampos() 
+        {
+            bool ok = true;
+
+            if (txtNombre.Text=="")
+            {
+                ok = false;
+                errorProvider1.SetError(txtNombre, "Ingrese un Nombre");
+
+            }
+            if (txtEstado.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtEstado, "Ingrese un Estado");
+
+            }
+            if (txtPass.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtPass, "Ingrese un Password");
+
+            }
+            if (txtIdLocal.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtIdLocal, "Ingrese un Id Local");
+
+            }
+            if (txtIdUsuario.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtIdUsuario, "Ingrese un Id Usuario");
+
+            }
+            return ok;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
