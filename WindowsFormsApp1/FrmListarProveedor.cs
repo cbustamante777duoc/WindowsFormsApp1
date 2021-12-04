@@ -41,11 +41,19 @@ namespace WindowsFormsApp1
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtBuscarRut.Text = "";
+            txtApellido.Text = "";
+            txtNombre.Text = "";
+            txtTelefono.Text = "";
+            txtDireccion.Text = "";
+            txtComuna.Text = "";
+            txtRut.Text = "";
             SQL.ListarProcedureSql("ListarProveedor", "cursorMemoria", dgvProveedor);
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
+            validarCampos();
+
             try
             {
                 ora.Open();
@@ -69,6 +77,48 @@ namespace WindowsFormsApp1
             }
 
             ora.Close();
+        }
+
+        private bool validarCampos() 
+        {
+            bool ok = true;
+            if (txtId.Text=="")
+            {
+                ok = false;
+                errorProvider1.SetError(txtId, "debe ingresar una ID");
+            }
+            if (txtApellido.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtApellido, "debe ingresar un Apellido");
+            }
+            if (txtComuna.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtComuna, "debe ingresar una Comuna");
+            }
+            if (txtDireccion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtDireccion, "debe ingresar una Direccion");
+            }
+            if (txtNombre.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtNombre, "debe ingresar un Nombre");
+            }
+            if (txtTelefono.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtTelefono, "debe ingresar un Telefono");
+            }
+            if (txtRut.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtRut, "debe ingresar un Rut");
+            }
+            
+            return ok;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
