@@ -32,6 +32,9 @@ namespace WindowsFormsApp1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+
+            validarCampos();
+
             try
             {
                 ora.Open();
@@ -55,6 +58,33 @@ namespace WindowsFormsApp1
 
         }
 
+
+        private bool validarCampos() 
+        {
+            bool ok = true;
+
+            if (txtId.Text=="")
+            {
+                ok = false;
+                errorProvider1.SetError(txtId, "id debe contener un valor");
+            }
+            if (txtComuna.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtComuna, "La Comuna  debe contener un valor");
+            }
+            if (txtDireccion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtDireccion, "La Direccion debe contener un valor");
+            }
+            if (txtNombre.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtNombre, "El Nombre debe contener un valor");
+            }
+            return ok;
+        }
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             try
