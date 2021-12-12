@@ -22,11 +22,19 @@ namespace WindowsFormsApp1
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
+
         }
 
         private void frmRol_Load(object sender, EventArgs e)
         {
             SQL.ListarProcedureSql("ListarRol", "cursorMemoria",dgvRol);
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtNombre.Text = "";
+            txtDescripcion.Text = "";
         }
     }
 }
