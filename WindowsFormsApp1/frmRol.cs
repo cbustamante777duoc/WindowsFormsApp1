@@ -21,7 +21,23 @@ namespace WindowsFormsApp1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ora.Open();
+                OracleCommand commando = new OracleCommand("insertarRol", ora);
+                commando.CommandType = System.Data.CommandType.StoredProcedure;
+                commando.Parameters.Add("id_rol", OracleType.VarChar).Value = txtId.Text;
+                commando.Parameters.Add("descripcion", OracleType.VarChar).Value = txtDescripcion.Text;
+                commando.Parameters.Add("nombre", OracleType.VarChar).Value = txtNombre.Text;
+                commando.ExecuteNonQuery();
+                MessageBox.Show("se inserto correctamente el rol en la base de datos con id =" + txtId.Text);
 
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Algo fallo");
+            }
 
         }
 
@@ -35,6 +51,7 @@ namespace WindowsFormsApp1
             txtId.Text = "";
             txtNombre.Text = "";
             txtDescripcion.Text = "";
+            SQL.ListarProcedureSql("ListarRol", "cursorMemoria", dgvRol);
         }
     }
 }
