@@ -78,7 +78,12 @@ namespace WindowsFormsApp1
 
         private void insumoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmInsumo frm = new FrmInsumo();
+          
+        }
+
+        private void rolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRol frm = new frmRol();
             frm.Show();
         }
     }

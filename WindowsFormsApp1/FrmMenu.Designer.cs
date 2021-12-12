@@ -33,6 +33,8 @@ namespace WindowsFormsApp1
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.localToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mermaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insumoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,10 +42,8 @@ namespace WindowsFormsApp1
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boletaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.localToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insumoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesPdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@ namespace WindowsFormsApp1
             this.proveedorToolStripMenuItem,
             this.localToolStripMenuItem1,
             this.usuarioToolStripMenuItem,
-            this.insumoToolStripMenuItem1});
+            this.rolToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "mantenedores";
@@ -83,6 +83,20 @@ namespace WindowsFormsApp1
             this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.proveedorToolStripMenuItem.Text = "proveedor";
             this.proveedorToolStripMenuItem.Click += new System.EventHandler(this.proveedorToolStripMenuItem_Click);
+            // 
+            // localToolStripMenuItem1
+            // 
+            this.localToolStripMenuItem1.Name = "localToolStripMenuItem1";
+            this.localToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.localToolStripMenuItem1.Text = "local";
+            this.localToolStripMenuItem1.Click += new System.EventHandler(this.localToolStripMenuItem1_Click);
+            // 
+            // usuarioToolStripMenuItem
+            // 
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuarioToolStripMenuItem.Text = "usuario";
+            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // listadosToolStripMenuItem
             // 
@@ -101,71 +115,57 @@ namespace WindowsFormsApp1
             // mermaToolStripMenuItem
             // 
             this.mermaToolStripMenuItem.Name = "mermaToolStripMenuItem";
-            this.mermaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mermaToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.mermaToolStripMenuItem.Text = "merma";
             this.mermaToolStripMenuItem.Click += new System.EventHandler(this.mermaToolStripMenuItem_Click);
             // 
             // insumoToolStripMenuItem
             // 
             this.insumoToolStripMenuItem.Name = "insumoToolStripMenuItem";
-            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.insumoToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.insumoToolStripMenuItem.Text = "insumo";
             this.insumoToolStripMenuItem.Click += new System.EventHandler(this.insumoToolStripMenuItem_Click);
             // 
             // localToolStripMenuItem
             // 
             this.localToolStripMenuItem.Name = "localToolStripMenuItem";
-            this.localToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.localToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.localToolStripMenuItem.Text = "local";
             this.localToolStripMenuItem.Click += new System.EventHandler(this.localToolStripMenuItem_Click);
             // 
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.proveedoresToolStripMenuItem.Text = "proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // productoToolStripMenuItem
             // 
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.productoToolStripMenuItem.Text = "producto";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
             // boletaToolStripMenuItem
             // 
             this.boletaToolStripMenuItem.Name = "boletaToolStripMenuItem";
-            this.boletaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.boletaToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.boletaToolStripMenuItem.Text = "boleta";
             this.boletaToolStripMenuItem.Click += new System.EventHandler(this.boletaToolStripMenuItem_Click);
-            // 
-            // localToolStripMenuItem1
-            // 
-            this.localToolStripMenuItem1.Name = "localToolStripMenuItem1";
-            this.localToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.localToolStripMenuItem1.Text = "local";
-            this.localToolStripMenuItem1.Click += new System.EventHandler(this.localToolStripMenuItem1_Click);
-            // 
-            // usuarioToolStripMenuItem
-            // 
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.usuarioToolStripMenuItem.Text = "usuario";
-            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
-            // 
-            // insumoToolStripMenuItem1
-            // 
-            this.insumoToolStripMenuItem1.Name = "insumoToolStripMenuItem1";
-            this.insumoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.insumoToolStripMenuItem1.Text = "insumo";
-            this.insumoToolStripMenuItem1.Click += new System.EventHandler(this.insumoToolStripMenuItem1_Click);
             // 
             // reportesPdfToolStripMenuItem
             // 
             this.reportesPdfToolStripMenuItem.Name = "reportesPdfToolStripMenuItem";
             this.reportesPdfToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.reportesPdfToolStripMenuItem.Text = "reportes pdf";
+            // 
+            // rolToolStripMenuItem
+            // 
+            this.rolToolStripMenuItem.Name = "rolToolStripMenuItem";
+            this.rolToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rolToolStripMenuItem.Text = "rol";
+            this.rolToolStripMenuItem.Click += new System.EventHandler(this.rolToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
@@ -198,7 +198,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem boletaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem localToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem insumoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem reportesPdfToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rolToolStripMenuItem;
     }
 }

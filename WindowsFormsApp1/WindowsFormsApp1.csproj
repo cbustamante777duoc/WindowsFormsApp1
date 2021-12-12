@@ -60,12 +60,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInsumo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmInsumo.Designer.cs">
-      <DependentUpon>FrmInsumo.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmListarInsumos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +89,12 @@
     </Compile>
     <Compile Include="FrmLocal.Designer.cs">
       <DependentUpon>FrmLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRol.Designer.cs">
+      <DependentUpon>frmRol.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTestBoleta.cs">
       <SubType>Form</SubType>
@@ -135,9 +135,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmInsumo.resx">
-      <DependentUpon>FrmInsumo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmListarInsumos.resx">
       <DependentUpon>FrmListarInsumos.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLocal.resx">
       <DependentUpon>FrmLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRol.resx">
+      <DependentUpon>frmRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTestBoleta.resx">
       <DependentUpon>FrmTestBoleta.cs</DependentUpon>

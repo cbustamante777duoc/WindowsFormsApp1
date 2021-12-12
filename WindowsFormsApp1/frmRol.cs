@@ -11,23 +11,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FrmInsumo : Form
+    public partial class frmRol : Form
     {
         OracleConnection ora = new OracleConnection("DATA SOURCE =XE; PASSWORD=abcd1234; USER ID =SIGLOXXI");
-        public FrmInsumo()
+        public frmRol()
         {
             InitializeComponent();
         }
 
-        private void btnCargar_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
-            ora.Open();
-            OracleCommand commando = new OracleCommand("select * from insumo", ora);
-            OracleDataAdapter adapter = new OracleDataAdapter(commando);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dgvInsumo.DataSource = table;
-            ora.Close();
+
+        }
+
+        private void frmRol_Load(object sender, EventArgs e)
+        {
+            SQL.ListarProcedureSql("ListarRol", "cursorMemoria",dgvRol);
         }
     }
 }
