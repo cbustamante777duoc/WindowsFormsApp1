@@ -166,11 +166,11 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(95, 264);
+            this.label5.Location = new System.Drawing.Point(71, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(121, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Buscar";
+            this.label5.Text = "Buscar por nombre local";
             // 
             // txtBuscar
             // 

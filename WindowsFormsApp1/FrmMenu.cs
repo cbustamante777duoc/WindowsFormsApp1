@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
 
         private void localToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmLocal frm = new FrmLocal();
+            frmListarLocal frm = new frmListarLocal();
             frm.Show();
         }
 
