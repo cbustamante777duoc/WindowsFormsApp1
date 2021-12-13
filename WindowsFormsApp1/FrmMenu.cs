@@ -48,8 +48,8 @@ namespace WindowsFormsApp1
 
         private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmListarProveedor frm = new FrmListarProveedor();
-            frm.Show();
+            frmListaProvedor frmLista = new frmListaProvedor();
+            frmLista.Show();
         }
 
         private void boletaToolStripMenuItem_Click(object sender, EventArgs e)
