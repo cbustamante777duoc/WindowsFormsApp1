@@ -38,6 +38,7 @@ namespace WindowsFormsApp1
 
                 MessageBox.Show("Algo fallo");
             }
+            ora.Close();
 
         }
 
@@ -52,6 +53,29 @@ namespace WindowsFormsApp1
             txtNombre.Text = "";
             txtDescripcion.Text = "";
             SQL.ListarProcedureSql("ListarRol", "cursorMemoria", dgvRol);
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                ora.Open();
+                OracleCommand commando = new OracleCommand("actualizarRol", ora);
+                commando.CommandType = System.Data.CommandType.StoredProcedure;
+                commando.Parameters.Add("id_rol", OracleType.VarChar).Value = txtId.Text;
+                commando.Parameters.Add("descripcion", OracleType.VarChar).Value = txtDescripcion.Text;
+                commando.Parameters.Add("nombre", OracleType.VarChar).Value = txtNombre.Text;
+                commando.ExecuteNonQuery();
+                MessageBox.Show("se inserto correctamente el rol en la base de datos con id =" + txtId.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No se pudo actualizar el rol");
+            }
+
+            ora.Close();
         }
     }
 }
